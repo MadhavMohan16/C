@@ -1,0 +1,9 @@
+#include<Stdio.h>
+int main()
+{
+   if(printf("%d ",printf("%d ")))
+      printf("Hello World");
+   else
+      printf("Hello");
+   return 0;
+}
