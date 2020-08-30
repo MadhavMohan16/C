@@ -1,0 +1,26 @@
+//program to insert an element into the array//
+#include<stdio.h>
+int main()
+{
+	int a[100],n,i,pos,element;
+	printf("Enter the value of n");
+	scanf("%d",&n);
+	printf("Enter the value in array");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	printf("Enter the position and element which you want to insert");
+	scanf("%d%d",&pos,&element);
+	for(i=n-1;i>=pos;i--)	
+	{
+		a[i+1]=a[i];
+	}
+	a[pos]=element;
+	printf("After inseting the element in array the new array are formed");
+	for(i=0;i<n+1;i++)
+	{
+		printf("%d  ",a[i]);
+	}
+	return 0;
+}
